@@ -12,7 +12,41 @@
 }
 */
 
-/* ------------------ ABOUT ------------------ */
+#completecontainer {
+/*	width: 488px;*/
+	width: 550px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+/* ------------------ DECADES ------------------ */
+#decades {
+/*	background-color: pink;*/
+	margin: 0;
+	width: 20px;
+	font-size: 20px;
+	color: #868686;
+	display: inline-block;
+	line-height: 99px;
+}
+
+#decades p {
+	display: inline-block;
+}
+
+/* ------------------ WEEKS ------------------ */
+#total {
+	width: 468;
+	margin: 0;
+	text-align: center;
+	display: inline-block;
+}
+
+.year {
+	margin: -11px 0;
+	padding: 0;
+}
+
 .week {
 	margin: 0 2px;
 	height: 6px;
@@ -27,15 +61,4 @@
 
 .week.filled {
 	background: -webkit-linear-gradient(#B6E7E2, #57C5D0);
-}
-
-.year {
-	margin: -11px 0;
-	padding: 0;
-}
-
-#total {
-	width: 468;
-	margin: 50px auto;
-	text-align: center;
 }
