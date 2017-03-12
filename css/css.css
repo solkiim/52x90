@@ -13,3 +13,29 @@
 */
 
 /* ------------------ ABOUT ------------------ */
+.week {
+	margin: 0 2px;
+	height: 6px;
+	width: 6px;
+	display: inline-block;
+	border-radius: 100%;
+}
+
+.week.unfilled {
+	border: 1px solid #57C5D0;
+}
+
+.week.filled {
+	background: -webkit-linear-gradient(#B6E7E2, #57C5D0);
+}
+
+.year {
+	margin: -11px 0;
+	padding: 0;
+}
+
+#total {
+	width: 468;
+	margin: 50px auto;
+	text-align: center;
+}
