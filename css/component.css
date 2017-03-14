@@ -83,22 +83,14 @@ html, body { height: 100%; }
 	background-attachment: fixed;
 }
 
-.pt-page-2 {
-	background: #FFAFBD;
-	background: -moz-linear-gradient(#ffc3a0, #FFAFBD);
-	background: -webkit-gradient(#ffc3a0, #FFAFBD);
-	background: -webkit-linear-gradient(#ffc3a0, #FFAFBD);
-	background: -o-linear-gradient(#ffc3a0, #FFAFBD);
-	background: -ms-linear-gradient(#ffc3a0, #FFAFBD);
-	background-attachment: fixed;
-}
-
 .pt-page-3 {
-	background: #60d7a9;
-}
-
-.pt-page-4 {
-	background: #fdc162;
+	background: #BAFDD2;
+	background: -moz-linear-gradient(#F0FFA8, #BAFDD2);
+	background: -webkit-gradient(#F0FFA8, #BAFDD2);
+	background: -webkit-linear-gradient(#F0FFA8, #BAFDD2);
+	background: -o-linear-gradient(#F0FFA8, #BAFDD2);
+	background: -ms-linear-gradient(#F0FFA8, #BAFDD2);
+	background-attachment: fixed;
 }
 
 .pt-page-5 {

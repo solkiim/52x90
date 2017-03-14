@@ -12,15 +12,25 @@
 }
 */
 
-#completecontainer {
-/*	width: 488px;*/
-	width: 550px;
+/* ------------------ PT-PAGE-2 YEARS ------------------ */
+
+.pt-page-2 {
+	background: #FFAFBD;
+	background: -moz-linear-gradient(#ffc3a0, #FFAFBD);
+	background: -webkit-gradient(#ffc3a0, #FFAFBD);
+	background: -webkit-linear-gradient(#ffc3a0, #FFAFBD);
+	background: -o-linear-gradient(#ffc3a0, #FFAFBD);
+	background: -ms-linear-gradient(#ffc3a0, #FFAFBD);
+	background-attachment: fixed;
+}
+
+.pt-page-2 #completecontainer {
+	width: 600px;
 	margin: 0px auto 50px auto;
 	text-align: center;
 }
 
-/* ------------------ DECADES ------------------ */
-#decades {
+.pt-page-2 #decades {
 /*	background-color: pink;*/
 	margin: 0;
 	margin-top: -14px; 
@@ -31,35 +41,96 @@
 	line-height: 80px;
 }
 
-#decades p {
+.pt-page-2 #decades p {
 	display: inline-block;
 }
 
-/* ------------------ WEEKS ------------------ */
-#total {
-	width: 468;
+.pt-page-2 #total {
+	width: 498;
 	margin: 0;
 	text-align: center;
 	display: inline-block;
 }
 
-.year {
-	margin: -14px 0px;
+.pt-page-2 .decade {
+	margin: 15px 0px;
 	padding: 0;
 }
 
-.week {
-	margin: 0 1px;
-	height: 5px;
-	width: 5px;
+.pt-page-2 .year {
+	margin: 0 10px;
+	height: 30px;
+	width: 30px;
 	display: inline-block;
 	border-radius: 100%;
 }
 
-.week.unfilled {
+.pt-page-2 .year.unfilled {
+	border: 3px solid #fff;
+}
+
+.pt-page-2 .year.filled {
+	background: #fff;
+}
+
+/* ------------------ PT-PAGE-4 WEEKS ------------------ */
+
+.pt-page-4 {
+	background: #f06666;
+	background: -moz-linear-gradient(#FFB88C, #f06666);
+	background: -webkit-gradient(#FFB88C, #f06666);
+	background: -webkit-linear-gradient(#FFB88C, #f06666);
+	background: -o-linear-gradient(#FFB88C, #f06666);
+	background: -ms-linear-gradient(#FFB88C, #f06666);
+	background-attachment: fixed;
+}
+
+.pt-page-4 #completecontainer {
+/*	width: 488px;*/
+	width: 600px;
+	margin: 0px auto 50px auto;
+	text-align: center;
+}
+
+.pt-page-4 #decades {
+/*	background-color: pink;*/
+	margin: 0;
+	margin-top: -14px; 
+	width: 20px;
+	font-size: 20px;
+	color: #868686;
+	display: inline-block;
+	line-height: 80px;
+}
+
+.pt-page-4 #decades p {
+	display: inline-block;
+}
+
+.pt-page-4 #total {
+	width: 508;
+	margin: 0;
+	text-align: center;
+	display: inline-block;
+}
+
+.pt-page-4 .year {
+	margin: -13px 0px;
+	padding: 0;
+}
+
+.pt-page-4 .week {
+	margin: 0 1px;
+	height: 7px;
+	width: 7px;
+	display: inline-block;
+	border-radius: 100%;
+}
+
+.pt-page-4 .week.unfilled {
 	border: 1px solid #fff;
 }
 
-.week.filled {
+.pt-page-4 .week.filled {
 	background: #fff;
 }

@@ -1,9 +1,44 @@
 var birthday = new Date("August 13, 1997 00:00:00");
 
 $(document).ready(function(){
+	makeYear(19);
 	makeWeek(1017);
+	
+	// olympics left
+	// number of books left to read
+	// average travels
 });
 
+
+/* ------------------------- FILL IN YEARS ------------------------- */
+function makeYear(yearcount) {
+	// iterate through and make original empty days
+	var totalstr = '';
+	for (var decade = 1; decade <= 9; decade++) {
+		var decadestr = '<div class="decade">';
+		
+		for (var year = 1; year <= 10; year++) {
+			decadestr += '<div class="year unfilled"></div>';
+		}
+		
+		totalstr += (decadestr + '</div>');
+	}
+	
+	$(".pt-page-2 #total").html(totalstr);
+	
+	fillYear(yearcount);
+}
+
+function fillYear(yearcount) {
+	var wholedecades = Math.floor(yearcount / 10);
+	var remainderyears = yearcount % 10;
+	for (var decade = 1; decade <= wholedecades; decade++) {
+		$(".pt-page-2 #total .decade:nth-child(" + decade + ") .year").removeClass("unfilled").addClass("filled");
+	}
+	for (var year = 1; year <= remainderyears; year++) {
+		$(".pt-page-2 #total .decade:nth-child(" + (wholedecades + 1) + ") .year:nth-child(" + year + ")").removeClass("unfilled").addClass("filled");
+	}
+}
 
 
 /* ------------------------- FILL IN WEEKS ------------------------- */
@@ -26,7 +61,7 @@ function makeWeek(weekcount) {
 		totalstr += (yearstr + '</div>');
 	}
 	
-	$("#total").html(totalstr);
+	$(".pt-page-4 #total").html(totalstr);
 	
 	fillWeek(weekcount);
 }
@@ -35,9 +70,9 @@ function fillWeek(weekcount) {
 	var wholeyears = Math.floor(weekcount / 52);
 	var remainderweeks = weekcount % 52;
 	for (var year = 1; year <= wholeyears; year++) {
-		$("#total .year:nth-child(" + year + ") .week").removeClass("unfilled").addClass("filled");
+		$(".pt-page-4 #total .year:nth-child(" + year + ") .week").removeClass("unfilled").addClass("filled");
 	}
 	for (var week = 1; week <= remainderweeks; week++) {
-		$("#total .year:nth-child(" + (wholeyears + 1) + ") .week:nth-child(" + week + ")").removeClass("unfilled").addClass("filled");
+		$(".pt-page-4 #total .year:nth-child(" + (wholeyears + 1) + ") .week:nth-child(" + week + ")").removeClass("unfilled").addClass("filled");
 	}
 }
