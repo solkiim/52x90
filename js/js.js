@@ -2,6 +2,7 @@ var birthday = new Date("August 13, 1997 00:00:00");
 
 $(document).ready(function(){
 	makeYear(19);
+	makeMonth(145);
 	makeWeek(1017);
 	
 	// olympics left
@@ -37,6 +38,37 @@ function fillYear(yearcount) {
 	}
 	for (var year = 1; year <= remainderyears; year++) {
 		$(".pt-page-2 #total .decade:nth-child(" + (wholedecades + 1) + ") .year:nth-child(" + year + ")").removeClass("unfilled").addClass("filled");
+	}
+}
+
+
+/* ------------------------- FILL IN MONTHS ------------------------- */
+function makeMonth(monthcount) {
+	// iterate through and make original empty days
+	var totalstr = '';
+	for (var years3 = 1; years3 <= 30; years3++) {
+		var years3str = '<div class="years3">';
+		
+		for (var month = 1; month <= 36; month++) {
+			years3str += '<div class="month unfilled"></div>';
+		}
+		
+		totalstr += (years3str + '</div>');
+	}
+	
+	$(".pt-page-3 #total").html(totalstr);
+	
+	fillMonth(monthcount);
+}
+
+function fillMonth(monthcount) {
+	var wholeyears3 = Math.floor(monthcount / 36);
+	var remaindermonths = monthcount % 36;
+	for (var years3 = 1; years3 <= wholeyears3; years3++) {
+		$(".pt-page-3 #total .years3:nth-child(" + years3 + ") .month").removeClass("unfilled").addClass("filled");
+	}
+	for (var month = 1; month <= remaindermonths; month++) {
+		$(".pt-page-3 #total .years3:nth-child(" + (wholeyears3 + 1) + ") .month:nth-child(" + month + ")").removeClass("unfilled").addClass("filled");
 	}
 }
 
