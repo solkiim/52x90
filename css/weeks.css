@@ -15,7 +15,7 @@
 #completecontainer {
 /*	width: 488px;*/
 	width: 550px;
-	margin: 50px auto;
+	margin: 0px auto 50px auto;
 	text-align: center;
 }
 
@@ -23,11 +23,12 @@
 #decades {
 /*	background-color: pink;*/
 	margin: 0;
+	margin-top: -14px; 
 	width: 20px;
 	font-size: 20px;
 	color: #868686;
 	display: inline-block;
-	line-height: 99px;
+	line-height: 80px;
 }
 
 #decades p {
@@ -43,22 +44,22 @@
 }
 
 .year {
-	margin: -11px 0;
+	margin: -14px 0px;
 	padding: 0;
 }
 
 .week {
-	margin: 0 2px;
-	height: 6px;
-	width: 6px;
+	margin: 0 1px;
+	height: 5px;
+	width: 5px;
 	display: inline-block;
 	border-radius: 100%;
 }
 
 .week.unfilled {
-	border: 1px solid #57C5D0;
+	border: 1px solid #fff;
 }
 
 .week.filled {
-	background: -webkit-linear-gradient(#B6E7E2, #57C5D0);
+	background: #fff;
 }
